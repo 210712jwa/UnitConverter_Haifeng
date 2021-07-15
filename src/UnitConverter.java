@@ -20,7 +20,7 @@ public class UnitConverter {
         return num;
     }
 
-     //convert US gallons to Imeria gallons
+     //convert US gallons to Imerial gallons
      public double convertUSGallonsToImperialGallons(double num){
         num = num * 0.832674;
         return num;
