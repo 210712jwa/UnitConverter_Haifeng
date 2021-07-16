@@ -9,10 +9,11 @@ US gallons to Imeria gallons, Mile to Kilometer, and Feet to Meters.
 public class UnitConverter {
     
     private static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         Functions uc = new Functions();
-        double output = 0;
+        double output;
         
         uc.printMenuOption();        
         String menuOption = sc.nextLine();
@@ -35,7 +36,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number.
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value");
+                                System.out.println("Please enter a numerical value");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -52,7 +53,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number.
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value");
+                                System.out.println("Please enter a numerical value");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -69,7 +70,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value.");
+                                System.out.println("Please enter a numerical value.");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -86,7 +87,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value.");
+                                System.out.println("Please enter a numerical value.");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -103,7 +104,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value.");
+                                System.out.println("Please enter a numerical value.");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -138,7 +139,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number.
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value");
+                                System.out.println("Please enter a numerical value");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -155,7 +156,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number.
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value");
+                                System.out.println("Please enter a numerical value");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -172,7 +173,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number.
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value");
+                                System.out.println("Please enter a numerical value");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -189,7 +190,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number.
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value");
+                                System.out.println("Please enter a numerical value");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
@@ -206,7 +207,7 @@ public class UnitConverter {
                             System.out.print("Type in a number: ");
                             //check if user enter an number.
                             while(!sc.hasNextDouble()){
-                                System.out.println("Please enter a numerica value");
+                                System.out.println("Please enter a numerical value");
                                 System.out.print("Type in a number: ");
                                 sc.next();
                             }
