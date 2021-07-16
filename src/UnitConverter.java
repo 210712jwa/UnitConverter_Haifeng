@@ -8,69 +8,6 @@ US gallons to Imeria gallons, Mile to Kilometer, and Feet to Meters.
 
 public class UnitConverter {
 
-    
-   //convert cups to teaspoons
-    public double convertCupsToTeaspoons(double num){ 
-        num = num * 48;
-        return num;
-    }
-    
-    //convert Teaspoons to Cups
-    public double convertTeaspoonsToCpus(double num){
-        num = num / 48;
-        return num;
-    }
-
-     //convert US gallons to Imerial gallons
-     public double convertUSGallonsToImperialGallons(double num){
-        num = num * 0.832674;
-        return num;
-    }
-
-    //convert Miles to killometers
-    public double convertMilestoKilometers(double num){
-        num = num * 1.609344;
-        return num;
-    }
-
-    //convert Feet to Meters
-    public double convertFeettoMeters(double num){
-        num = num / 3.28084;
-        return num;
-    }
-
-    //first layer selction prompt
-    public void printMenuOption(){
-        System.out.println("\n1.Volume conversions");
-        System.out.println("2.Distance conversions");
-        System.out.println("3.Quit");
-        System.out.print("Please type in the number in front of the option to select: ");
-
-    }
-
-    //printout Volume conversion option prompt
-    public void printVolumeOption(){
-        System.out.println("\n1. Cups to Teaspoons");
-        System.out.println("2. Teaspoons to Cups");
-        System.out.println("3. US Gallons to Imperial Gallons");
-        System.out.println("4. US Gallons to Imperial Gallons");
-        System.out.println("5. US Gallons to Imperial Gallons");
-        System.out.println("6. Quit");
-        System.out.print("Please type in the number in front of the option to select: ");
-    }
-
-    //printout Distance conversion option prompt
-    public void printDistanceOption(){
-        System.out.println("\n1. Feet to Meters");
-        System.out.println("2. Miles to Kilometers");
-        System.out.println("3. Centimeters to Inches");
-        System.out.println("4. US Gallons to Imperial Gallons");
-        System.out.println("5. US Gallons to Imperial Gallons");
-        System.out.println("6. Quit");
-        System.out.print("Please type in the number in front of the option to select: ");
-    }
-
-
     public static void main(String[] args) {
 
         Functions uc = new Functions();
