@@ -7,12 +7,13 @@ US gallons to Imeria gallons, Mile to Kilometer, and Feet to Meters.
 */
 
 public class UnitConverter {
-
+    
+    private static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
         Functions uc = new Functions();
         double output = 0;
-        Scanner sc = new Scanner(System.in);
+        
         uc.printMenuOption();        
         String menuOption = sc.nextLine();
        
@@ -123,8 +124,6 @@ public class UnitConverter {
                         //if user input unrecognize selection prompt the user to re-enter.
                         default:
                             System.out.println("\nPlease enter a valid option.");
-                            uc.printVolumeOption();
-                            userOption = sc.next();
                             break;
                     }
                     break;
@@ -228,8 +227,6 @@ public class UnitConverter {
                         //if user input unrecognize selection for distance conversion prompt the user to re-enter.
                         default:
                             System.out.println("\nPlease enter a valid option.");
-                            uc.printDistanceOption();
-                            userOption = sc.next();
                             break;
                     }
                     break;
