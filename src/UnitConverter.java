@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 /**
 This an unitconverter to convert Cups to Teaspoon, Teaspoons to Cups, 
 US gallons to Imeria gallons, Mile to Kilometer, and Feet to Meters.
@@ -8,7 +9,7 @@ US gallons to Imeria gallons, Mile to Kilometer, and Feet to Meters.
 public class UnitConverter {
 
     
-    //convert cups to teaspoons
+   //convert cups to teaspoons
     public double convertCupsToTeaspoons(double num){ 
         num = num * 48;
         return num;
@@ -26,7 +27,7 @@ public class UnitConverter {
         return num;
     }
 
-    //convert miles to killometers
+    //convert Miles to killometers
     public double convertMilestoKilometers(double num){
         num = num * 1.609344;
         return num;
@@ -52,7 +53,9 @@ public class UnitConverter {
         System.out.println("\n1. Cups to Teaspoons");
         System.out.println("2. Teaspoons to Cups");
         System.out.println("3. US Gallons to Imperial Gallons");
-        System.out.println("4. Quit");
+        System.out.println("4. US Gallons to Imperial Gallons");
+        System.out.println("5. US Gallons to Imperial Gallons");
+        System.out.println("6. Quit");
         System.out.print("Please type in the number in front of the option to select: ");
     }
 
@@ -60,14 +63,17 @@ public class UnitConverter {
     public void printDistanceOption(){
         System.out.println("\n1. Feet to Meters");
         System.out.println("2. Miles to Kilometers");
-        System.out.println("3. Quit");
+        System.out.println("3. Centimeters to Inches");
+        System.out.println("4. US Gallons to Imperial Gallons");
+        System.out.println("5. US Gallons to Imperial Gallons");
+        System.out.println("6. Quit");
         System.out.print("Please type in the number in front of the option to select: ");
     }
 
 
     public static void main(String[] args) {
 
-        UnitConverter uc = new UnitConverter();
+        Functions uc = new Functions();
         double output = 0;
         Scanner sc = new Scanner(System.in);
         uc.printMenuOption();        
@@ -138,6 +144,40 @@ public class UnitConverter {
                             break;
                         //exit program if 4 is enter for an option
                         case "4":
+                            System.out.println("You choose to convert Ounces to Liters.");
+                            System.out.print("Type in a number: ");
+                            //check if user enter an number
+                            while(!sc.hasNextDouble()){
+                                System.out.println("Please enter a numerica value.");
+                                System.out.print("Type in a number: ");
+                                sc.next();
+                            }
+
+                            input = sc.nextDouble();
+                            output = uc.convertOuncesToLiters(input);
+                            System.out.println(input + " Ounces is " + output + " Liters.\n");
+                            uc.printMenuOption();
+                            menuOption = sc.next();
+                            break;
+
+                        case "5":
+                             System.out.println("You choose to convert Gallons to Liters.");
+                            System.out.print("Type in a number: ");
+                            //check if user enter an number
+                            while(!sc.hasNextDouble()){
+                                System.out.println("Please enter a numerica value.");
+                                System.out.print("Type in a number: ");
+                                sc.next();
+                            }
+
+                            input = sc.nextDouble();
+                            output = uc.convertGallonsToLiters(input);
+                            System.out.println(input + " Gallons is " + output + " Liters.\n");
+                            uc.printMenuOption();
+                            menuOption = sc.next();
+                            break;
+                        
+                        case "6":
                             System.out.println("Quit successfully. Goodbye!\n");
                             sc.close();
                             System.exit(0);
@@ -191,12 +231,64 @@ public class UnitConverter {
                             menuOption = sc.next();
                             break;
                             //exit when 3 is enter as option
-                            case "3":
+                        case "3":
+                            System.out.println("You choose to convert Centimeters to Inches");
+                            System.out.print("Type in a number: ");
+                            //check if user enter an number.
+                            while(!sc.hasNextDouble()){
+                                System.out.println("Please enter a numerica value");
+                                System.out.print("Type in a number: ");
+                                sc.next();
+                            }
+            
+                            input = sc.nextDouble();
+                            output = uc.convertCentimeterstoInches(input);
+                            System.out.println(input + " Centimeters is " + output + " Inches.\n");
+                            uc.printMenuOption();
+                            menuOption = sc.next();
+                            break;
+
+                        case "4": 
+                            System.out.println("You choose to convert Inches to Centimeters");
+                            System.out.print("Type in a number: ");
+                            //check if user enter an number.
+                            while(!sc.hasNextDouble()){
+                                System.out.println("Please enter a numerica value");
+                                System.out.print("Type in a number: ");
+                                sc.next();
+                            }
+            
+                            input = sc.nextDouble();
+                            output = uc.convertInchestoCentimeters(input);
+                            System.out.println(input + " Inches is " + output + " Centimeters.\n");
+                            uc.printMenuOption();
+                            menuOption = sc.next();
+                            break;
+                        
+                        case "5": 
+                            System.out.println("You choose to convert Inches to Feet");
+                            System.out.print("Type in a number: ");
+                            //check if user enter an number.
+                            while(!sc.hasNextDouble()){
+                                System.out.println("Please enter a numerica value");
+                                System.out.print("Type in a number: ");
+                                sc.next();
+                            }
+            
+                            input = sc.nextDouble();
+                            output = uc.convertInchesToFeet(input);
+                            System.out.println(input + " Inches is " + output + " Feet.\n");
+                            uc.printMenuOption();
+                            menuOption = sc.next();
+                            break;
+
+                        case "6": 
                             System.out.println("Quit successfully, Goodbye!\n");
                             sc.close();
                             System.exit(0);
                             break;
-
+                            
+                        //if user input unrecognize selection for distance conversion prompt the user to re-enter.
                         default:
                             System.out.println("\nPlease enter a valid option.");
                             uc.printDistanceOption();
