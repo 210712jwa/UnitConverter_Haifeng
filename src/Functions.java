@@ -65,10 +65,10 @@ public class Functions {
 
     // first layer selction prompt
     public void printMenuOption() {
-        System.out.println("\n1.Volume conversions");
-        System.out.println("2.Distance conversions");
-        System.out.println("3.Quit");
-        System.out.print("Please type in the number in front of the option to select: ");
+        System.out.println("\na.Volume conversions");
+        System.out.println("b.Distance conversions");
+        System.out.println("c.Quit");
+        System.out.print("select your option: ");
 
     }
 
@@ -80,7 +80,7 @@ public class Functions {
         System.out.println("4. Ounces to Liters");
         System.out.println("5. Gallons To Liters");
         System.out.println("6. Quit");
-        System.out.print("Please type in the number in front of the option to select: ");
+        System.out.print("select an option above: ");
     }
 
     // printout Distance conversion option prompt
@@ -91,6 +91,6 @@ public class Functions {
         System.out.println("4. Inches to Centimeters");
         System.out.println("5. Inches to Feet");
         System.out.println("6. Quit");
-        System.out.print("Please type in the number in front of the option to select: ");
+        System.out.print("Please select an option above: ");
     }
 }

@@ -1,10 +1,7 @@
 import java.util.*;
 
 
-/**
-This an unitconverter to convert Cups to Teaspoon, Teaspoons to Cups, 
-US gallons to Imeria gallons, Mile to Kilometer, and Feet to Meters.
-*/
+
 
 public class UnitConverter {
     
@@ -14,7 +11,6 @@ public class UnitConverter {
 
         Functions uc = new Functions();
         double output;
-        
         uc.printMenuOption();        
         String menuOption = sc.nextLine();
        
@@ -24,7 +20,7 @@ public class UnitConverter {
             //first layer option
             switch(menuOption){
                 
-                case "1":
+                case "a":
                     uc.printVolumeOption();
                     String userOption = sc.next();
 
@@ -129,7 +125,7 @@ public class UnitConverter {
                     }
                     break;
 
-                case "2":
+                case "b":
                     uc.printDistanceOption();
                     userOption = sc.next();
 
@@ -233,7 +229,7 @@ public class UnitConverter {
                     break;
                 
                 //exit program when 3 is enter as option
-                case "3":
+                case "c":
                     System.out.println("Quit successfully, Goodbye!\n");
                     sc.close();
                     System.exit(0);
