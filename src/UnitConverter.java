@@ -108,6 +108,7 @@ public class UnitConverter {
                             uc.printMenuOption();
                             menuOption = sc.next();
                             break;
+
                         case "6":
                             uc.printMenuOption();
                             menuOption = sc.next();
@@ -226,8 +227,6 @@ public class UnitConverter {
                             sc.close();
                             System.exit(0);
                             break;
-
-                        
 
                         // if user input unrecognize selection for distance conversion prompt the user
                         // to re-enter.
