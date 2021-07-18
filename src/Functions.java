@@ -31,9 +31,9 @@ public class Functions {
         num = num * 3.78541;
         return num;
     }
-    //Distance conversion
+    // Distance conversion
 
-    //Convert Feet to Meters
+    // Convert Feet to Meters
     public double convertFeettoMeters(double num) {
         num = num * 0.3048;
         return num;
@@ -52,7 +52,7 @@ public class Functions {
     }
 
     // convert Inches to Centimeters
-    public double  convertInchestoCentimeters(double num) {
+    public double convertInchestoCentimeters(double num) {
         num = num * 2.54;
         return num;
     }
