@@ -78,8 +78,9 @@ public class Functions {
         System.out.println("2. Teaspoons to Cups");
         System.out.println("3. US Gallons to Imperial Gallons");
         System.out.println("4. Ounces to Liters");
-        System.out.println("5. Gallons To Liters");
-        System.out.println("6. Quit");
+        System.out.println("5. Gallons to Liters");
+        System.out.println("6. Go back to the first menu");
+        System.out.println("7. Quit");
         System.out.print("select an option above: ");
     }
 
@@ -90,7 +91,8 @@ public class Functions {
         System.out.println("3. Centimeters to Inches");
         System.out.println("4. Inches to Centimeters");
         System.out.println("5. Inches to Feet");
-        System.out.println("6. Quit");
+        System.out.println("6. Go back to the first menu");
+        System.out.println("7. Quit");
         System.out.print("Please select an option above: ");
     }
 }
